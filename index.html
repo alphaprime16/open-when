@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open When... 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">♡ A little something for you ♡</p>
+      <h1>Open When...</h1>
+      <p class="subtitle">For the moments when you need a little reminder that someone is always thinking of you. 💗</p>
+      <div class="divider">✦ ♡ ✦</div>
+    </section>
+
+    <section class="letters-section">
+      <h2>Choose a letter 💌</h2>
+      <p class="instruction">Only open the one that feels right for the moment.</p>
+
+      <div class="letter-grid">
+        <button class="envelope" data-letter="happy">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're happy</span>
+          <small>for that beautiful smile</small>
+        </button>
+
+        <button class="envelope" data-letter="sad">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're sad</span>
+          <small>for the difficult days</small>
+        </button>
+
+        <button class="envelope" data-letter="why">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're wondering why I chose you</span>
+          <small>for a little reminder</small>
+        </button>
+
+        <button class="envelope" data-letter="mad-me">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're mad at me</span>
+          <small>especially when you're REALLY mad</small>
+        </button>
+
+        <button class="envelope" data-letter="mad-you">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're mad at me</span>
+          <small>from the other side of the fight</small>
+        </button>
+
+        <button class="envelope" data-letter="miss">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you miss me</span>
+          <small>for when we're far apart</small>
+        </button>
+
+        <button class="envelope" data-letter="love">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open to know how much I love you</span>
+          <small>because apparently I need to prove it</small>
+        </button>
+
+        <button class="envelope" data-letter="overthinking">
+          <span class="seal">♡</span>
+          <span class="envelope-icon">✉</span>
+          <span>Open when you're overthinking</span>
+          <small>take a breath first</small>
+        </button>
+      </div>
+    </section>
+
+    <footer>Made with a whole lot of love ♡</footer>
+  </main>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <article class="paper" role="dialog" aria-modal="true">
+      <button class="close" aria-label="Close letter">×</button>
+      <div class="paper-top">♡</div>
+      <p class="paper-label">OPEN WHEN...</p>
+      <h2 id="letterTitle"></h2>
+      <div id="letterBody" class="letter-body"></div>
+      <div id="poemButtonWrap"></div>
+      <div class="paper-bottom">♡ always, always ♡</div>
+    </article>
+  </div>
+
+  <div class="modal" id="poemModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <article class="paper poem-paper" role="dialog" aria-modal="true">
+      <button class="close poem-close" aria-label="Close poem">×</button>
+      <div class="paper-top">✦</div>
+      <p class="paper-label">A LITTLE POEM</p>
+      <h2>For you, always.</h2>
+      <div class="letter-body poem">
+        <p>Beginning with a hi and an awkward—<br>
+        "Mujhe kutto se dar lagta hai."</p>
+
+        <p>Never knew I would be writing all this one day,<br>
+        365 days turning into 730 days,<br>
+        The feeling of strangers turning into home.</p>
+
+        <p>Been 2 years, but the feelings never faded,<br>
+        The same butterflies coming right at me<br>
+        Hearing you compliment me—<br>
+        "Hayyeee, kitni pyari lag rahi meri baby."</p>
+
+        <p>I've always loved it and will always cherish it.<br>
+        Your voice, your looks, your thoughts,<br>
+        Your ideas, your smile, your eyes,<br>
+        Have always just been something I adore so much in you.</p>
+
+        <p>You're really special to me.<br>
+        Writing about you makes me feel like<br>
+        How lucky I am to have you in my life. ♡</p>
+
+        <p>Love you so, so, so much, my babyyy. 💗<br>
+        They say it's about the place, but with you,<br>
+        It's just you and me enjoying ourselves.</p>
+
+        <p>You're really precious to me.<br>
+        Take care of yourself for me. ♡</p>
+      </div>
+      <div class="paper-bottom">♡</div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
